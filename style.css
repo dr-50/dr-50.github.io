@@ -1,0 +1,218 @@
+
+* {
+    margin: 0;
+    
+}
+body{
+    background-color: gainsboro;
+}
+.menu-container{
+    background-color: cadetblue;
+    padding-top: 15px;
+}
+
+.menu-list{
+    display: flex;
+    list-style-type: none;
+    justify-content: end;
+}
+
+.menu-item {
+    display: inline;
+}
+
+.menu-item a{
+    text-decoration: none;
+    color: black;
+    font-size: larger;
+    margin: 5px 25px;
+}
+
+.menu-item a:hover{
+    text-decoration: underline;
+}
+
+/* Start of Current Responsibilities */
+.about-me{
+    margin: 15px;
+}
+
+.personal-photo{
+    height: 200px;
+    width: 150px;
+}
+
+
+/* End of Current Responsibilities */
+
+/* Box visuals start */
+.box-containers{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 25px;
+}
+
+/* Start Game Box */
+.games-container{
+    border: black 3px solid;
+    height: 200px;
+    width: 250px;
+    background-image: url("./images/controller.png");
+    background-repeat: no-repeat;
+    background-size: 250px, 200px;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.games-label{
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+    align-self:flex-end;
+    
+}
+
+.games-container:hover .games-label{
+     display: none;
+}
+
+.games-container:hover{
+    opacity: 1 ;
+    background-image: none;
+    background-color: lightblue;
+}
+
+.game-item a{
+    display: none;
+    
+}
+
+.game-item{
+    list-style-type: none;
+}
+
+.games-container:hover .game-item a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    font-size: larger;
+    
+    
+}
+/* End Game Box */
+
+/* Start Project Box */
+.project-container{
+    border: black 3px solid;
+    height: 200px;
+    width: 250px;
+    background-image: url("./images/projects.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px, 200px;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.project-label{
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+    align-self:flex-end;
+    
+}
+
+.project-container:hover .project-label{
+    display: none;
+}
+
+.project-container:hover{
+    opacity: 1 ;
+    background-image: none;
+    background-color: lightblue;
+}
+
+.project-item a{
+    display: none;
+}
+
+.project-item{
+    list-style-type: none;
+}
+.project-container:hover .project-item a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    font-size: larger;
+}
+/* End of Projects */
+
+/* Start of Ongoing Projects */
+.ongoing-container{
+    border: black 3px solid;
+    height: 200px;
+    width: 250px;
+    background-image: url("./images/under_construction.jpg");
+    background-repeat: no-repeat;
+    background-size: 250px, 200px;
+    background-position: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.ongoing-label{
+    color: red;
+    font-weight: bolder;
+    font-size: larger;
+    align-self:flex-end;
+    
+}
+
+.ongoing-container:hover .ongoing-label{
+    display: none;
+}
+
+.ongoing-container:hover{
+    opacity: 1 ;
+    background-image: none;
+    background-color: lightblue;
+}
+
+.ongoing-item a{
+    display: none;
+}
+
+.ongoing-item{
+    list-style-type: none;
+}
+.ongoing-container:hover .ongoing-item a {
+    display: block;
+    text-decoration: none;
+    color: green;
+    font-weight: bolder;
+    font-size: larger;
+}
+
+.footer-links{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.contact-me img{
+    margin-left: 10px;
+    height: 32px;
+    width: 32px;
+}
+
+
