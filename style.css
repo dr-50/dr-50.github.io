@@ -6,6 +6,10 @@
 body{
     background-color: gainsboro;
 }
+.cover-header {
+height: 100px;
+width: 100%;
+}
 .menu-container{
     background-color: cadetblue;
     padding-top: 15px;
