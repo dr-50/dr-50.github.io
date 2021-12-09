@@ -5,6 +5,8 @@
 }
 body{
     background-color: gainsboro;
+    display: flex;
+    flex-direction: column;
 }
 .cover-header {
 height: 100px;
@@ -301,5 +303,6 @@ footer{
     justify-content: center;
     align-items: center;
     width: 100vw;
-    margin-top: 15px;
+    height: 50px;
+    background-color: cadetblue;
 }
