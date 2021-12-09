@@ -9,36 +9,82 @@ body{
 .cover-header {
 height: 100px;
 width: 100%;
+margin-bottom: 0;
+padding-bottom: 0;
 }
+
+.column{
+    float: left;
+    width: 40%;
+}
+
+.row:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
 .menu-container{
     background-color: cadetblue;
-    padding-top: 15px;
-}
-
-.menu-list{
+    /* padding-top: 15px; */
     display: flex;
-    list-style-type: none;
-    justify-content: end;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    margin-top: -4px;
+    padding-top: 0;
 }
 
-.menu-item {
-    display: inline;
-}
-
-.menu-item a{
-    text-decoration: none;
+.dropbtn {
+    background-color: cadetblue;
     color: black;
-    font-size: larger;
-    margin: 5px 25px;
-}
-
-.menu-item a:hover{
-    text-decoration: underline;
-}
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    margin-right: 70px;
+  }
+  
+  
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+  }
+  .dropdown-content a img{
+      height: 20px;
+      width: 20px;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {display: block;}
+  
+  /* Change the background color of the dropdown button when the dropdown content is shown */
+  .dropdown:hover .dropbtn {background-color: lightskyblue;}
 
 /* Start of Current Responsibilities */
 .about-me{
     margin: 15px;
+}
+
+.about-me h4, .about-me h3{
+    color: lightslategray;
 }
 
 .personal-photo{
@@ -46,8 +92,37 @@ width: 100%;
     width: 150px;
 }
 
+.contact-logo {
+    display: flex;
+}
+
+.contact-logo-list {
+    list-style-type: none;
+}
+
+.contact-logo-list-item {
+    float: left;
+    margin: 5px;
+}
+
+.contact-logo-list-item img {
+    height: 20px;
+    width: 20px;
+}
+
+.job-desc{
+    max-width: 45%;
+}
 
 /* End of Current Responsibilities */
+
+.biography{
+    font-size: larger;
+}
+.biography h3{
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
 
 /* Box visuals start */
 .box-containers{
