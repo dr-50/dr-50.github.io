@@ -170,8 +170,25 @@ padding-bottom: 0;
     width: 32px;
 }
 
+.resume-download {
+    margin-top: 20px;
+    border: black solid 2px;
+    background-color: rgb(243, 197, 167);
+    box-shadow: darkgrey 3px 5px;
+}
+
+.resume-download:hover{
+    opacity: .7;
+}
+
+.resume-download a {
+    text-decoration: none;
+    color: black;
+    margin: 5px;
+}
+
 footer{
-    position: absolute;
+    position: relative;
     bottom:0;
     display: flex;
     justify-content: center;
@@ -187,6 +204,12 @@ footer{
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
+    }
+    footer{
+        position: relative;
+        margin-top: 20px;
+        bottom: 0;
+
     }
     .about-column, .biography-column{
         width: 60%;
