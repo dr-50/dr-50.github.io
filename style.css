@@ -176,7 +176,7 @@ footer{
     align-items: center;
     width: 100vw;
     height: 50px;
-    background-color: cadetblue;
+    background-color: purple;
 }
 
 @media (max-width: 770px){
