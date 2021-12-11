@@ -16,6 +16,7 @@ padding-bottom: 0;
 }
 .row{
     padding-bottom: 50px;
+    height: calc(100%-200px);
 }
 .column{
     float: left;
@@ -188,7 +189,7 @@ padding-bottom: 0;
 }
 
 footer{
-    position: absolute;
+    /* position: absolute; */
     bottom:0;
     display: flex;
     justify-content: center;
