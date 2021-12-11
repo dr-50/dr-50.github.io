@@ -171,9 +171,6 @@ padding-bottom: 0;
 }
 
 footer{
-    /* position: absolute;
-    bottom: 0; */
-    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
