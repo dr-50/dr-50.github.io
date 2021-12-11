@@ -14,10 +14,10 @@ width: 100%;
 margin-bottom: 0;
 padding-bottom: 0;
 }
-.row{
+/* .row{
     padding-bottom: 50px;
     height: calc(100%-200px);
-}
+} */
 .column{
     float: left;
     width: 40%;
@@ -190,15 +190,12 @@ padding-bottom: 0;
 }
 
 footer{
-    position: absolute;
-    bottom:0;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 50px;
-    background-color: cadetblue;
-    margin-top: -50px;
+    background-color: purple;
 }
 
 @media (max-width: 770px){
@@ -208,12 +205,12 @@ footer{
         flex-direction: column;
         align-content: center;
     }
-    footer{
+    /* footer{
         position: relative;
         margin-top: 20px;
         bottom: 0;
 
-    }
+    } */
     .about-column, .biography-column{
         width: 60%;
         float: left;
