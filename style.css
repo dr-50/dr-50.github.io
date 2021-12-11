@@ -14,12 +14,45 @@ width: 100%;
 margin-bottom: 0;
 padding-bottom: 0;
 }
-
+.row{
+    padding-bottom: 50px;
+}
 .column{
     float: left;
     width: 40%;
 }
+.about-column{
+    width: 25%;
+}
+.biography-column{
+    width: 50%;
+}
+.timeline-column{
+    float: right;
+    width:15%;
+    margin-right: 20px;
+}
 
+
+
+.timeline{
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.timeline h4 {
+    position: relative;
+}
+.timeline-item{
+    margin-top: 20px;
+    border: black 1px solid;
+    box-shadow: darkgrey 3px 5px;
+    width: 100%;
+    padding: 5px;
+}
 .row:after {
     content:"";
     display: table;
@@ -85,7 +118,7 @@ padding-bottom: 0;
     margin: 15px;
 }
 
-.about-me h4, .about-me h3{
+.about-me h4, .about-me h3, .about-me h5{
     color: lightslategray;
 }
 
@@ -120,174 +153,17 @@ padding-bottom: 0;
 
 .biography{
     font-size: larger;
+    display: flex;
+    flex-direction: column;
+    
 }
 .biography h3{
     margin-top: 15px;
     margin-bottom: 5px;
 }
 
-/* Box visuals start */
-.box-containers{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 25px;
-}
-
-/* Start Game Box */
-.games-container{
-    border: black 3px solid;
-    height: 200px;
-    width: 250px;
-    background-image: url("./images/controller.png");
-    background-repeat: no-repeat;
-    background-size: 250px, 200px;
-    background-position: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 15px;
-}
-
-.games-label{
-    color: red;
-    font-weight: bolder;
-    font-size: larger;
-    align-self:flex-end;
-    
-}
-
-.games-container:hover .games-label{
-     display: none;
-}
-
-.games-container:hover{
-    opacity: 1 ;
-    background-image: none;
-    background-color: lightblue;
-}
-
-.game-item a{
-    display: none;
-    
-}
-
-.game-item{
-    list-style-type: none;
-}
-
-.games-container:hover .game-item a {
-    display: block;
-    text-decoration: none;
-    color: green;
-    font-weight: bolder;
-    font-size: larger;
-    
-    
-}
-/* End Game Box */
-
-/* Start Project Box */
-.project-container{
-    border: black 3px solid;
-    height: 200px;
-    width: 250px;
-    background-image: url("./images/projects.jpg");
-    background-repeat: no-repeat;
-    background-size: 250px, 200px;
-    background-position: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-right: 15px;
-}
-
-.project-label{
-    color: red;
-    font-weight: bolder;
-    font-size: larger;
-    align-self:flex-end;
-    
-}
-
-.project-container:hover .project-label{
-    display: none;
-}
-
-.project-container:hover{
-    opacity: 1 ;
-    background-image: none;
-    background-color: lightblue;
-}
-
-.project-item a{
-    display: none;
-}
-
-.project-item{
-    list-style-type: none;
-}
-.project-container:hover .project-item a {
-    display: block;
-    text-decoration: none;
-    color: green;
-    font-weight: bolder;
-    font-size: larger;
-}
-/* End of Projects */
-
-/* Start of Ongoing Projects */
-.ongoing-container{
-    border: black 3px solid;
-    height: 200px;
-    width: 250px;
-    background-image: url("./images/under_construction.jpg");
-    background-repeat: no-repeat;
-    background-size: 250px, 200px;
-    background-position: center;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.ongoing-label{
-    color: red;
-    font-weight: bolder;
-    font-size: larger;
-    align-self:flex-end;
-    
-}
-
-.ongoing-container:hover .ongoing-label{
-    display: none;
-}
-
-.ongoing-container:hover{
-    opacity: 1 ;
-    background-image: none;
-    background-color: lightblue;
-}
-
-.ongoing-item a{
-    display: none;
-}
-
-.ongoing-item{
-    list-style-type: none;
-}
-.ongoing-container:hover .ongoing-item a {
-    display: block;
-    text-decoration: none;
-    color: green;
-    font-weight: bolder;
-    font-size: larger;
-}
-
-.footer-links{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 50px;
+.biography p{
+    margin-top: 10px;
 }
 
 .contact-me img{
@@ -297,12 +173,35 @@ padding-bottom: 0;
 }
 
 footer{
-    position: absolute;
-    bottom: 0;
+    /* position: absolute;
+    bottom: 0; */
+    margin-top: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     width: 100vw;
     height: 50px;
     background-color: cadetblue;
+}
+
+@media (max-width: 770px){
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-content: center;
+    }
+    .footer{
+        clear: both;
+        position:relative;
+        margin-top: 20px;
+    }
+    .about-column, .biography-column{
+        width: 60%;
+        float: left;
+    }
+    .timeline-column{
+        width: 30%;
+        float: right;
+    }
 }
