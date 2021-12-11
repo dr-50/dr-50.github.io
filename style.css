@@ -176,7 +176,7 @@ footer{
     align-items: center;
     width: 100vw;
     height: 50px;
-    background-color: purple;
+    background-color: cadetblue;
 }
 
 @media (max-width: 770px){
@@ -185,11 +185,6 @@ footer{
         flex-wrap: wrap;
         flex-direction: column;
         align-content: center;
-    }
-    .footer{
-        clear: both;
-        position:relative;
-        margin-top: 20px;
     }
     .about-column, .biography-column{
         width: 60%;
