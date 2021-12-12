@@ -43,6 +43,10 @@ padding-bottom: 0;
     margin-bottom: 15px;
 }
 
+.timeline h3 {
+    text-decoration: underline;
+}
+
 .timeline h4 {
     position: relative;
 }
@@ -53,7 +57,44 @@ padding-bottom: 0;
     width: 100%;
     padding: 5px;
     background-color: rgb(243, 227, 198);
+    display: inline-block;
 }
+.timeline-item:hover{
+    background-color: rgb(184, 206, 252);
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .timeline-tooltip {
+visibility: hidden;
+font-size: 14px;
+font-weight: 200;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+/* bottom: 125%; */
+right: 105%;
+margin-left: -60px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+
+.tooltip:hover .timeline-tooltip {
+visibility: visible;
+opacity: 1;
+}
+/* end tooltip */
+
 .row:after {
     content:"";
     display: table;
@@ -77,7 +118,7 @@ padding-bottom: 0;
     font-size: 16px;
     border: none;
     margin-right: 70px;
-    font-weight: bold;
+    font-weight: B;
   }
   
   
@@ -108,13 +149,19 @@ padding-bottom: 0;
   }
   
   /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {background-color: #ddd;}
+  .dropdown-content a:hover {
+      background-color: #ddd;
+    }
   
   /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {display: block;}
+  .dropdown:hover .dropdown-content {
+      display: block;
+    }
   
   /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {background-color: lightskyblue;}
+  .dropdown:hover .dropbtn {
+      background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
+}
 
 /* Start of Current Responsibilities */
 .about-me{
@@ -148,6 +195,7 @@ padding-bottom: 0;
     width: 20px;
 }
 
+
 .job-desc{
     max-width: 45%;
 }
@@ -180,6 +228,10 @@ padding-bottom: 0;
     border: black solid 2px;
     background-color: rgb(243, 197, 167);
     box-shadow: darkgrey 3px 5px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 .resume-download:hover{
@@ -189,7 +241,7 @@ padding-bottom: 0;
 .resume-download a {
     text-decoration: none;
     color: black;
-    margin: 5px;
+    margin: 10px;
 }
 
 footer{
