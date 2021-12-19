@@ -124,6 +124,10 @@ opacity: 1;
     clear: both;
 }
 
+.sidepanel, .NavBar{
+    display:none;
+}
+
 .menu-container{
     background-color: cadetblue;
     /* padding-top: 15px; */
@@ -148,6 +152,7 @@ opacity: 1;
   .dropdown {
     position: relative;
     display: inline-block;
+    
   }
   
   .dropdown-content {
@@ -190,8 +195,10 @@ opacity: 1;
 .about-me{
     margin: 15px;
 }
-
-.about-me h4, .about-me h3, .about-me h5{
+.about-me h2{
+    margin-top: 10px;
+}
+.about-me h4, .about-me h5{
     color: lightslategray;
 }
 
@@ -297,4 +304,81 @@ footer{
         width: 30%;
         float: right;
     }
+}
+
+@media (max-width: 595px) {
+    .dropdown{
+        display: none;
+    }
+    /* NavBar */
+.sidepanel {
+    width: 0;
+    display: block;
+    position: fixed;
+    z-index: 1;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    background-color: rgb(87, 85, 85);
+    overflow-x: hidden;
+    transition: 0.25s;
+    padding-top: 60px;
+  }
+  
+  .sidepanel a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    display: block;
+    /* transition: 0.1s; */
+  }
+  
+  .sidepanel a:hover {
+    color: #f1f1f1;
+  }
+  
+  .sidepanel .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+  }
+  
+  .NavBar {
+    display: flex;
+    flex-wrap: wrap;
+    color: black;
+    width: 100%;
+    background-color: cadetblue;
+  }
+  
+  .NavBar a {
+    position: absolute;
+    left: 75px;
+    margin-top: 20px;
+    text-decoration: none;
+    color: white;
+  }
+  
+  .openbtn {
+    font-size: 20px;
+    cursor: pointer;
+    background-color: cadetblue;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    text-align: left;
+    border: black 1px solid;
+    box-shadow: 2px 1px black;
+  }
+  
+  .openbtn:hover {
+    background-color: #444;
+  }
+  .mobile-menu-header{
+      color: cadetblue;
+      text-decoration: underline;
+      margin-left: 8px;
+  }
 }

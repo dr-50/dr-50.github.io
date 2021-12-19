@@ -13,7 +13,7 @@
       <img class="cover-header" src="./assets/images/cover-header-image.jpg" />
     </picture>
 
-    <div class="menu-container">
+    <div class="menu-container">  <!--Large Screen Menu-->
       <div class="dropdown">
         <button class="dropbtn">In Progress Projects</button>
         <div class="dropdown-content">
@@ -61,7 +61,42 @@
           /></a>
         </div>
       </div>
-    </div>
+    </div>  <!--End Large Screen Menu-->
+
+    <div id="mySidepanel" class="sidepanel">  <!--Mobile Screen Menu-->
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+        <h3 class="mobile-menu-header">Contact Me</h3>
+        <a href="mailto:devonross50@yahoo.com">DevonRoss50@yahoo.com 📧</a>
+        <a href="tel:920-493-8001">920-493-8001 ☎</a>
+        <h3 class="mobile-menu-header">Projects</h3>
+          <a
+            href="https://adamlsn.github.io/songsAndSpirits/"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Songs & Spirits</a>
+          <a
+            href="https://dr-50.github.io/WeatherDashboard/"
+            target="_blank"
+            rel="noreferrer noopener"
+            >Weather Dashboard</a>
+        <h3 class="mobile-menu-header">In Progress Projects</h3>
+        <a
+        href="https://dr-50.github.io/Sarter/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Sarter Marine Towing</a
+      >
+      <a
+        href="https://dr-50.github.io/ArcheryScores/"
+        target="_blank"
+        rel="noreferrer noopener"
+        >Archery Scores</a
+      >
+      </div>
+      <div class="NavBar">
+        <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
+      </div>  <!--End Mobile Screen Menu-->
+
     <!-- End of Menu  -->
     <div class="row">
       <div class="column about-column">
@@ -179,6 +214,7 @@
       </div>
     </div>
     <div class="Resume"></div>
+    <script src="./assets/js/script.js"></script>
   </body>
   <!-- <footer>
     <span>Thank You For Visiting!</span>
