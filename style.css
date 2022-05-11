@@ -8,16 +8,48 @@ body{
     display: flex;
     flex-direction: column;
 }
+
+.temp-box{
+    margin-top: 40px;
+    margin-left: 5px;
+    height: 200px;
+    width: 90%;
+    border: 2px solid black;
+}
+
 .cover-header {
 height: 100px;
 width: 100%;
 margin-bottom: 0;
 padding-bottom: 0;
 }
-/* .row{
-    padding-bottom: 50px;
-    height: calc(100%-200px);
-} */
+
+/* change display color */
+.dark-display-color{
+    background-color: rgb(31, 31, 31);
+    color: white;
+}
+
+.colorful-display-color{
+    background-color: gainsboro;
+    color: black;
+}
+
+.display-color{
+    width: 75px;
+    /* border: black 2px solid; */
+    display: flex;
+    flex-direction:row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    border-radius: 25px;
+    margin-left: 10px;
+}
+.display-color button {
+    background-color: gainsboro;
+    border-radius: 25px;
+}
+/* End change display color */
 .column{
     float: left;
     width: 40%;
@@ -60,9 +92,19 @@ padding-bottom: 0;
     background-color: rgb(243, 227, 198);
     display: inline-block;
 }
+
+.timeline-dark-display {
+    background-color: darkgrey ;
+}
+
+.timeline-colorful-display {
+    background-color: rgb(243, 227, 198);
+}  
+
 .timeline-item:hover{
     background-color: rgb(184, 206, 252);
 }
+
 .timeline li{
     padding-bottom: 1.5rem;
     border-left: 1px solid #abaaed;
@@ -253,7 +295,7 @@ opacity: 1;
     width: 32px;
 }
 
-.resume-download {
+.resume-download{
     margin-top: 20px;
     border: black solid 2px;
     background-color: rgb(243, 197, 167);
