@@ -9,6 +9,50 @@ body{
     flex-direction: column;
 }
 
+/* Seasonal Background classes */
+
+
+.january{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.february{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.march {
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.april{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.may{
+    background-image: gainsboro;
+}
+.june{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.july{
+    background-image: linear-gradient(red,white, blue);
+}
+.august{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.september{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.october{
+    background-image: linear-gradient(rgb(248, 223, 140),rgb(240, 157, 80));
+}
+.november{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+.december{
+    background-image: linear-gradient(rgb(102, 250, 114),white);
+}
+/* Daily themes */
+.may4th{
+    background-color: #555;
+}
+
 .temp-box{
     margin-top: 40px;
     margin-left: 5px;
@@ -217,16 +261,31 @@ opacity: 1;
     flex-direction: row-reverse;
     margin-top: -4px;
     padding-top: 0;
+    justify-content: space-between;
+}
+
+.menu-nav{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+
+}
+
+.menu-nav button {
+   background-color: cadetblue;
+   border: none;
+
 }
 
 .dropbtn {
-    background-color: cadetblue;
+    /* background-color: cadetblue; */
+    background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
     color: black;
     padding: 16px;
     font-size: 16px;
     border: none;
-    margin-right: 70px;
-    font-weight: B;
+    margin-right: 150px;
+    font-weight: Bold;
   }
   
   
@@ -270,6 +329,55 @@ opacity: 1;
   /* Change the background color of the dropdown button when the dropdown content is shown */
   .dropdown:hover .dropbtn {
       background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
+}
+
+/* Start of Calendar */
+/* .calendar{
+    height: 150px;
+    align-items: center;
+    display: none;
+} */
+
+.season-window{
+    border: 2px solid black;
+    background-color: #444;
+    margin-top: 50px;
+    margin-left: 15px;
+    height: 300px;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    position:relative
+}
+
+.season-window::before{
+    content: "☘️";
+    font-size: 100px;
+}
+.season-window::after{
+    content: "☘️";
+    font-size: 75px;
+    align-items: flex-end;
+}
+
+.calendar-button{
+    display: block;
+    /* flex-wrap: wrap; */
+    background-color: inherit;
+    border: none;
+    width:30px;
+}
+
+#cal{
+    width: 50%;
+    display: none;
+}
+
+datalist {
+    display: none;
+    justify-content: space-between;
+    color: black;
+    width: 50%;
 }
 
 /* Start of Current Responsibilities */
@@ -317,6 +425,7 @@ opacity: 1;
     font-size: larger;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
     
 }
 .biography h3{
@@ -327,6 +436,72 @@ opacity: 1;
 .biography p{
     margin-top: 10px;
 }
+
+/* start of biography */
+.tabs{
+    border: 1px solid black;
+    display: flex;
+}
+
+.tabs__sidebard {
+    width: 125px;
+    flex-shrink: 0;
+    background: rgb(243, 227, 198);
+}
+
+.tabs__button {
+    display: block;
+    padding: 10px;
+    background: cadetblue;
+    border: none;
+    width: 100%;
+    outline: none;
+    cursor: pointer;
+}
+
+.tabs__button:active{
+    background: cadetblue;
+}
+
+.tabs__button:not(:last-of-type) {
+    border-bottom: 1px solid rgb(243, 227, 198);;
+}
+
+.tabs__button--active {
+    font-weight: bold;
+    border-right: 2px solid teal;
+    background-color: rgb(243, 227, 198);;
+}
+
+.tabs__content {
+    padding: 15px;
+    font-size: 1rem;
+    display: none;
+}
+
+.tabs__content--active{
+    display: block;
+}
+
+.tabs__content > :first-child {
+    margin-top: 0;
+}
+/* end of biography  */
+
+/* start of projects/challenges */
+.projects{
+    margin-top: 25px;
+}
+
+.projects ul{
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+/* .projects li a{
+    text-decoration: none;
+    color: black;
+} */
 
 .contact-me img{
     margin-left: 10px;

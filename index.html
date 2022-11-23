@@ -15,51 +15,53 @@
 
     <div class="menu-container">
       <!--Large Screen Menu-->
-      <div class="dropdown">
-        <button class="dropbtn">In Progress Projects</button>
-        <div class="dropdown-content">
-          <a
-            href="https://dr-50.github.io/Sarter/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Sarter Marine Towing</a
-          >
-          <a
-            href="https://dr-50.github.io/ArcheryScores/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Archery Scores</a
-          >
+      <div class="menu-nav">
+        <!-- <div class="dropdown">
+          <button class="dropbtn">In Progress Projects</button>
+          <div class="dropdown-content">
+            <a
+              href="https://dr-50.github.io/Sarter/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Sarter Marine Towing</a
+            >
+            <a
+              href="https://dr-50.github.io/ArcheryScores/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Archery Scores</a
+            >
+          </div>
         </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Projects</button>
-        <div class="dropdown-content">
-          <a
-            href="https://adamlsn.github.io/songsAndSpirits/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Songs & Spirits</a
-          >
-          <a
-            href="https://dr-50.github.io/WeatherDashboard/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >Weather Dashboard</a
-          >
-        </div>
-      </div>
-      <div class="dropdown">
-        <button class="dropbtn">Contact Me</button>
-        <div class="dropdown-content">
-          <a href="mailto:devonross50@yahoo.com">DevonRoss50@yahoo.com 📧</a>
-          <a href="tel:920-493-8001">920-493-8001 ☎</a>
-          <a
-            href="https://github.com/dr-50/"
-            target="_blank"
-            rel="noreferrer noopener"
-            >github <img src="./assets/images/GitHub-Mark-32px.png"
-          /></a>
+        <div class="dropdown">
+          <button class="dropbtn">Projects</button>
+          <div class="dropdown-content">
+            <a
+              href="https://adamlsn.github.io/songsAndSpirits/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Songs & Spirits</a
+            >
+            <a
+              href="https://dr-50.github.io/WeatherDashboard/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >Weather Dashboard</a
+            >
+          </div>
+        </div> -->
+        <div class="dropdown">
+          <button class="dropbtn">Contact Me</button>
+          <div class="dropdown-content">
+            <a href="mailto:devonross50@yahoo.com">DevonRoss50@yahoo.com 📧</a>
+            <a href="tel:920-493-8001">920-493-8001 ☎</a>
+            <a
+              href="https://github.com/dr-50/"
+              target="_blank"
+              rel="noreferrer noopener"
+              >github <img src="./assets/images/GitHub-Mark-32px.png"
+            /></a>
+          </div>
         </div>
       </div>
     </div>
@@ -71,7 +73,7 @@
       <h3 class="mobile-menu-header">Contact Me</h3>
       <a href="mailto:devonross50@yahoo.com">DevonRoss50@yahoo.com 📧</a>
       <a href="tel:920-493-8001">920-493-8001 ☎</a>
-      <h3 class="mobile-menu-header">Projects</h3>
+      <!-- <h3 class="mobile-menu-header">Projects</h3>
       <a
         href="https://adamlsn.github.io/songsAndSpirits/"
         target="_blank"
@@ -96,7 +98,7 @@
         target="_blank"
         rel="noreferrer noopener"
         >Archery Scores</a
-      >
+      > -->
     </div>
     <div class="NavBar">
       <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
@@ -134,12 +136,15 @@
             </ul>
           </div>
         </div>
+        <!-- <div class="season-window">
+          
+        </div> -->
       </div>
 
       <div class="column biography-column">
         <div class="biography">
           <h3>Biography</h3>
-          <p>
+          <!-- <p>
             I have spent the last 3 years as a Volume Manager tasked with
             forecasting customer's natural gas usage, building relationships
             with utilities, and maintaining a customer base within the utility
@@ -162,7 +167,97 @@
             different areas. I have begun working through learning Python in my
             personal time in addition to continuing to build on my knowledge
             with JavaScript and the Microsoft suite.
-          </p>
+          </p> -->
+          <div class="tabs">
+            <div class="tabs__sidebar">
+              <button class="tabs__button" data-for-tab="One">Past</button>
+              <button
+                class="tabs__button tabs__button--active"
+                data-for-tab="Two"
+              >
+                Present
+              </button>
+              <button class="tabs__button" data-for-tab="Three">Future</button>
+            </div>
+            <div class="tabs__content" data-tab="One">
+              <h2>Past</h2>
+              <p>
+                I am a University of Wisconsin-Green Bay graduate, obtaining a
+                Bachelor of Science in Economics. For the past 8 years I have
+                held various roles within Constellation NewEnergy, spanning from
+                Account Management, Volume Management, to my current role as a
+                Solutions Architect. Within Account Management my focus was held
+                by managing customer relationships for large volume accounts.
+                Within Volume Management I was tasked with forecasting customer
+                loads and managing storage totaling more than 4 BCF. I have
+                continued education with a certificate in Full Stack Web
+                Development from the University of Wisconsin Extended Campus.
+              </p>
+            </div>
+            <div class="tabs__content tabs__content--active" data-tab="Two">
+              <h2>Present</h2>
+              <p>
+                I am currently holding the role of Principal Solutions Architect
+                within Constellation NewEnergy's Operations department. I am
+                tasked with writing requirements and directing attention within
+                our systems, acting as a median from the business to the
+                development team. I am also responsible for creating and rolling
+                out departement specific tools to allow for improved
+                efficiencies. In some free time outside of work, I have
+                continued to explore additional languanges outside of my web
+                development knowledge of HTML, CSS, and JavaScript. I am
+                currently expanding my python related skills by working through
+                various coding challenges.
+              </p>
+            </div>
+            <div class="tabs__content" data-tab="Three">
+              <h2>Future</h2>
+              <p>
+                I have enjoyed the challenges and learning that goes along with
+                coding. I have been accepted into Rutgers University to obtain a
+                Masters in Data Science and look forward to the opportunity to
+                begin the program in the future. I look forward to the
+                opportunities of expanding into many other languages to further
+                my coding growth. Professionally I continue to gain knowledge
+                and experiece to one day find myself in more of a Data Analyst
+                or potentially a Data Scientist role.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="projects">
+          <div class="tabs">
+            <div class="tabs__sidebar">
+              <button class="tabs__button tabs__button--active" data-for-tab="OneProjects">Coding Challenges</button>
+              <button class="tabs__button" data-for-tab="TwoProjects">Web Dev Projects</button>
+            </div>
+            <div class="tabs__content tabs__content--active" data-tab="OneProjects">
+              <h2>Coding Challenges</h2>
+              <ul>
+                <li>
+                  <a href="https://github.com/dr-50/decimaltobinary-python">Convert Number to Binary (python)</a>
+                </li>
+                <li>
+                  <a href="https://github.com/dr-50/MinMaxFinder-python">Min Max Finder (python)</a>
+                </li>
+              </ul>
+            </div>           
+            <div class="tabs__content" data-tab="TwoProjects">
+              <h2>Web Dev Projects</h2>
+              <ul>
+                <li>
+                  <a href="https://adamlsn.github.io/songsAndSpirits/"
+                  target="_blank"
+                  rel="noreferrer noopener">Songs and Spirits</a>
+                </li>
+                <li>
+                  <a href="https://dr-50.github.io/WeatherDashboard/"
+                  target="_blank"
+                  rel="noreferrer noopener">Weather Dashboard</a>
+                </li>
+              </ul>
+            </div>
+          </div>
         </div>
       </div>
       <div class="column timeline-column">
@@ -263,7 +358,7 @@
         </div>
       </div>
     </div>
-    <div class="display-color">
+    <!-- <div class="display-color">
       <button id="darkDisplay" class="display-colorful" onclick="darkDisplay()">
         🌙
       </button>
@@ -274,7 +369,35 @@
       >
         🌞
       </button>
-    </div>
+    </div> -->
+
+    <!-- Start of Calendar Slide -->
+    <button class="calendar-button" onclick="calSliderVisibility()">📅</button>
+    <input
+      class="cal"
+      id="cal"
+      type="range"
+      list="calMonths"
+      min="0"
+      max="11"
+      step="1"
+      onchange="calSlideFunction()"
+    />
+    <datalist id="calMonths">
+      <option value="0" label="Jan"></option>
+      <option value="1" label="Feb"></option>
+      <option value="2" label="Mar"></option>
+      <option value="3" label="Apr"></option>
+      <option value="4" label="May"></option>
+      <option value="5" label="Jun"></option>
+      <option value="6" label="Jul"></option>
+      <option value="7" label="Aug"></option>
+      <option value="8" label="Sep"></option>
+      <option value="9" label="Oct"></option>
+      <option value="10" label="Nov"></option>
+      <option value="11" label="Dec"></option>
+    </datalist>
+
     <div class="Resume"></div>
     <script src="./assets/js/script.js"></script>
     <script
