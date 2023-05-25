@@ -9,49 +9,6 @@ body{
     flex-direction: column;
 }
 
-/* Seasonal Background classes */
-
-
-.january{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.february{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.march {
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.april{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.may{
-    background-image: gainsboro;
-}
-.june{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.july{
-    background-image: linear-gradient(red,white, blue);
-}
-.august{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.september{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.october{
-    background-image: linear-gradient(rgb(248, 223, 140),rgb(240, 157, 80));
-}
-.november{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.december{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-/* Daily themes */
-.may4th{
-    background-color: #555;
-}
 
 .temp-box{
     margin-top: 40px;
@@ -66,12 +23,6 @@ height: 100px;
 width: 100%;
 margin-bottom: 0;
 padding-bottom: 0;
-}
-
-/* change display color */
-.dark-display-color{
-    background-color: rgb(31, 31, 31);
-    color: white;
 }
 
 .colorful-display-color{
@@ -95,10 +46,6 @@ padding-bottom: 0;
     border-radius: 25px;
 }
 
-.display-color #darkDisplay {
-    background-color: #555;
-    border-radius: 25px;
-}
 
 .color-display-tooltip {
     position: relative;
@@ -127,11 +74,6 @@ transition: opacity 0.3s;
     visibility: visible;
     opacity: 1;
     }
-
-/* .display-color button {
-    background-color: gainsboro;
-    border-radius: 25px;
-} */
 /* End change display color */
 .column{
     float: left;
@@ -176,9 +118,7 @@ transition: opacity 0.3s;
     display: inline-block;
 }
 
-.timeline-dark-display {
-    background-color: darkgrey ;
-}
+
 
 .timeline-colorful-display {
     background-color: rgb(243, 227, 198);
@@ -331,54 +271,6 @@ opacity: 1;
       background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
 }
 
-/* Start of Calendar */
-/* .calendar{
-    height: 150px;
-    align-items: center;
-    display: none;
-} */
-
-.season-window{
-    border: 2px solid black;
-    background-color: #444;
-    margin-top: 50px;
-    margin-left: 15px;
-    height: 300px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    position:relative
-}
-
-.season-window::before{
-    content: "☘️";
-    font-size: 100px;
-}
-.season-window::after{
-    content: "☘️";
-    font-size: 75px;
-    align-items: flex-end;
-}
-
-.calendar-button{
-    display: block;
-    /* flex-wrap: wrap; */
-    background-color: inherit;
-    border: none;
-    width:30px;
-}
-
-#cal{
-    width: 50%;
-    display: none;
-}
-
-datalist {
-    display: none;
-    justify-content: space-between;
-    color: black;
-    width: 50%;
-}
 
 /* Start of Current Responsibilities */
 .about-me{
@@ -457,6 +349,7 @@ datalist {
     width: 100%;
     outline: none;
     cursor: pointer;
+    color: white;
 }
 
 .tabs__button:active{
@@ -470,7 +363,8 @@ datalist {
 .tabs__button--active {
     font-weight: bold;
     border-right: 2px solid teal;
-    background-color: rgb(243, 227, 198);;
+    background-color: rgb(243, 227, 198);
+    color: black;
 }
 
 .tabs__content {

@@ -1,7 +1,7 @@
 //Current season
 
   //Set calendar slider to current month
-document.getElementById("cal").value=new Date().getMonth()
+// document.getElementById("cal").value=new Date().getMonth()
 
 function calSliderVisibility(){
   if(document.getElementById("cal").style.display !== 'flex'){
