@@ -331,54 +331,6 @@ opacity: 1;
       background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
 }
 
-/* Start of Calendar */
-/* .calendar{
-    height: 150px;
-    align-items: center;
-    display: none;
-} */
-
-.season-window{
-    border: 2px solid black;
-    background-color: #444;
-    margin-top: 50px;
-    margin-left: 15px;
-    height: 300px;
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    position:relative
-}
-
-.season-window::before{
-    content: "☘️";
-    font-size: 100px;
-}
-.season-window::after{
-    content: "☘️";
-    font-size: 75px;
-    align-items: flex-end;
-}
-
-.calendar-button{
-    display: block;
-    /* flex-wrap: wrap; */
-    background-color: inherit;
-    border: none;
-    width:30px;
-}
-
-#cal{
-    width: 50%;
-    display: none;
-}
-
-datalist {
-    display: none;
-    justify-content: space-between;
-    color: black;
-    width: 50%;
-}
 
 /* Start of Current Responsibilities */
 .about-me{
