@@ -276,25 +276,19 @@ opacity: 1;
    border: none;
 
 }
-
-.dropbtn {
-    /* background-color: cadetblue; */
-    background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    margin-right: 150px;
-    font-weight: Bold;
-    width: 100%;
-  }
   
   
   .dropdown {
     position: relative;
     display: inline-block;
-    margin-right: 100px;
-    max-width: 150px;
+    /* margin-right: 100px; */
+    /* max-width: 250px; */
+    background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
+    color: black;
+    border: none;
+    font-weight: bold;
+    margin-right: 150px;
+    padding: 10px;
   }
   
   .dropdown-content {
@@ -304,6 +298,8 @@ opacity: 1;
     min-width: 240px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    margin-top: 10px;
+    margin-left: -10px;
   }
   
   .dropdown-content a {
