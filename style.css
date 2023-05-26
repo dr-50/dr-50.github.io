@@ -1,17 +1,25 @@
 *{
     margin: 0;
     height: 100%;
+
+}
+body{
+    display: flex;
+    flex-direction: row;
 }
 .side-menu{
     background-color: slategray;
-    max-width: 25%;
+    /* min-width: 120px; */
+    min-width: 15%;
     height: 100%;
     text-align: center;
+    left: 0;
+    overflow: hidden;
 }
 
 .side-menu img{
-    min-width: 75px;
-    min-height: 75px;
+    /* min-width: 75px;
+    min-height: 75px; */
     width: 100px;
     height: 100px;
     /* border-radius: 100%; */
@@ -21,4 +29,9 @@
 
 .side-menu h3 {
     margin-top: 10px;
+    height: 30px;
+    /* overflow: hidden; */
+}
+.bio-link {
+    height: fit-content
 }
