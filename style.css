@@ -9,64 +9,85 @@ body{
     flex-direction: column;
 }
 
-/* Seasonal Background classes */
 
-
-.january{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.february{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.march {
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.april{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.may{
-    background-image: gainsboro;
-}
-.june{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.july{
-    background-image: linear-gradient(red,white, blue);
-}
-.august{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.september{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.october{
-    background-image: linear-gradient(rgb(248, 223, 140),rgb(240, 157, 80));
-}
-.november{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-.december{
-    background-image: linear-gradient(rgb(102, 250, 114),white);
-}
-/* Daily themes */
-.may4th{
-    background-color: #555;
-}
-
-.temp-box{
-    margin-top: 40px;
-    margin-left: 5px;
-    height: 200px;
-    width: 90%;
-    border: 2px solid black;
-}
-
+/* mountain background image */
 .cover-header {
 height: 100px;
 width: 100%;
 margin-bottom: 0;
 padding-bottom: 0;
 }
+
+/* css mountain background */
+.hero-picture-css{
+    overflow: hidden;
+    background: #8db0c1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    max-height: 100px;
+}
+.mountain, .mountain-two, .mountain-three{
+    position: absolute;
+    bottom: 0;
+    border-left: 75px solid transparent;
+    border-right: 75px solid transparent;
+    border-bottom: 90px solid rosybrown;
+    z-index: 1;
+    left: 10%;
+}
+.mountain-two{
+    left: calc(10% + 80px);
+    bottom: -20px;
+    opacity: .3;
+    z-index: 0;
+}
+.mountain-three{
+    left: calc(10% - 80px);
+    bottom: -10px;
+    opacity: .5;
+    z-index: 0;
+}
+.mountain-top{
+    position: absolute;
+    right: -32px;
+    border-left: 32px solid transparent;
+    border-right: 32px solid transparent;
+    border-bottom: 36px solid #ceeaf6;
+    z-index: 2;
+}
+.moutnain-cap-1{
+    position: absolute;
+    top: 70px;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-top: 25px solid #ceeaf6 ;
+}
+.moutnain-cap-1{
+    left: -55px;
+}
+.cloud, .cloud::before, .cloud::after{
+    position: absolute;
+    width: 50px;
+    height: 25px;
+    background-color: #fff;
+    border-radius: 100px / 50px;
+    top: 20px;
+    right: 33%
+}
+.cloud:before {
+    content: '';
+    left: -20px;
+    top: 10px;
+
+  }
+  .cloud:after {
+    content: '';
+    left: 20px;
+    top: 10px;
+  }
 
 /* change display color */
 .dark-display-color{
@@ -262,6 +283,7 @@ opacity: 1;
     margin-top: -4px;
     padding-top: 0;
     justify-content: space-between;
+    margin-top: 100px;
 }
 
 .menu-nav{
@@ -381,6 +403,7 @@ opacity: 1;
 .biography h3{
     margin-top: 15px;
     margin-bottom: 5px;
+    text-decoration: underline;
 }
 
 .biography p{
@@ -389,7 +412,7 @@ opacity: 1;
 
 /* start of biography */
 .tabs{
-    border: 1px solid black;
+    /* border: 1px solid black; */
     display: flex;
 }
 
@@ -404,7 +427,7 @@ opacity: 1;
     padding: 10px;
     background: cadetblue;
     border: none;
-    width: 100%;
+    width: 150px;
     outline: none;
     cursor: pointer;
     color: white;
@@ -443,7 +466,7 @@ opacity: 1;
 
 /* start of projects/challenges */
 .projects{
-    margin-top: 25px;
+    margin-top: 50px;
 }
 
 .projects ul{
