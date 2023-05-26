@@ -6,9 +6,9 @@
     background-color: slategray;
     max-width: 25%;
     height: 100%;
-    display: flex;
-    justify-content: center;
+    text-align: center;
 }
+
 .side-menu img{
     min-width: 75px;
     min-height: 75px;
@@ -17,4 +17,8 @@
     /* border-radius: 100%; */
     vertical-align: middle;
     margin-top: 20px;
+}
+
+.side-menu h3 {
+    margin-top: 10px;
 }
