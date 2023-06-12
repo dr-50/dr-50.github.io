@@ -3,7 +3,6 @@
     /* height: 100%; */
 }
 section{
-    background: chartreuse;
     display: block;
     margin: 0;
     min-height: 0;
@@ -26,13 +25,149 @@ section{
 .col>.content{
     height: 100%;
 }
+/* menu styling */
 .side-menu{
     width: 15%;
     background-color: slategray;
     text-align: center;
 }
-.side-menu img{
+.personal-photo{
     height: 100px;
     width: 100px;
     margin-top: 100px;
 }
+.contact-logo {
+    display: flex;
+}
+
+.contact-logo-list {
+    list-style-type: none;
+}
+
+.contact-logo-list-item {
+    float: left;
+    margin: 5px;
+}
+
+.contact-logo-list-item img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-buttons{
+    margin-top: 50px;
+    /* display: grid;
+    place-content: center; */
+    height: 200px;
+    position:relative;
+}
+.nav-buttons ul{
+    /* justify-content: center; */
+    height: 200px;
+    /* display: grid;
+    place-content: center; */
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-65%);
+    margin: 0;
+    position: absolute;
+
+}
+.nav-buttons ul li {
+    list-style: none;
+    /* width: 125px; */
+}
+.nav-buttons ul li button{
+    background-color: antiquewhite;
+    /* background: transparent; */
+    width: 125px;
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    cursor: pointer;
+    /* box-shadow: inset 0 0 0 1px currentColor; */
+}
+
+.nav-buttons ul li button{
+    background-color: lightgray;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkgray, white) 1;
+}
+
+.nav-buttons ul li button:hover{
+    background-color: lightblue;
+    opacity: .7;
+    /* -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out; */
+    transition: all .5s ease-in-out;
+
+}
+
+/* end menu styling */
+
+/* Start of Nav Card Styling */
+    .nav-cards{
+        display: flex;
+        margin: 0 30% ;
+        /* align-items: center; */
+        /* max-width: 150px; */
+    }
+    .card{
+        z-index: 1;
+        background: #EBEBEB;
+        border-radius: 1rem;
+        padding: 2rem;
+        box-shadow: 4px 4px 12px 2px rgb(black, .6);
+        transition: .2s;
+        margin: 2px;
+    }
+
+    .card:hover{
+        transform: translateY(-.5rem);
+    }
+    .card.active{
+        background-color: lightslategray;
+    }
+
+
+/* end of nav card styling */
+
+/* start body detail styling */
+.details-body{
+    text-align: center;
+}
+.details-card{
+    display: none;
+}
+
+.details-card.active{
+    display: flex;
+}
+
+/* .details-card.{
+    display: flex;
+} */
+
+.details-mini-card.active{
+    display: block;
+}
+
+.details-mini-card{
+    display: none;
+}
+
+.bio-nav{
+    min-width: 60px;
+    margin: 3px;
+}
+
+.bio-nav.active{
+    background-color: lightslategray;
+}
+/* .bio-nav:hover{
+    transform: translateX(-.25rem);
+} */
+
+/* end body detail styling */
