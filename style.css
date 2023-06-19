@@ -249,4 +249,107 @@ section{
  .resume-preview{
     height: 70vh;
     width: 60vw;
+
+
+
 }
+
+
+
+.timeline-column{
+    float: right;
+    width:19%;
+    margin-right: 20px;
+}
+
+.timeline{
+    height: 100%;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.timeline h3 {
+    text-decoration: underline;
+    margin-bottom: 15px;
+}
+
+.timeline h4 {
+    position: relative;
+}
+.timeline-item{
+    /* margin-top: 13px; */
+    border: black 1px solid;
+    box-shadow: darkgrey 3px 5px;
+    width: 100%;
+    padding: 5px;
+    background-color: rgb(243, 227, 198);
+    display: inline-block;
+}
+
+
+
+.timeline-colorful-display {
+    background-color: rgb(243, 227, 198);
+}  
+
+.timeline-item:hover{
+    background-color: rgb(184, 206, 252);
+}
+
+.timeline li{
+    padding-bottom: 1.5rem;
+    border-left: 1px solid #abaaed;
+    position: relative;
+    padding-left: 20px;
+    margin-left: 10px;
+    list-style: none;
+}
+
+.work:before{
+    content: '👔';
+    position: absolute;
+    left: -12px;
+    top: 25%;
+}
+.school:before{
+    content:'🎓';
+    position: absolute;
+    left: -12px;
+    top: 25%;
+}
+
+/* Tooltip */
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+.tooltip .timeline-tooltip {
+visibility: hidden;
+font-size: 14px;
+font-weight: 200;
+width: 120px;
+background-color: #555;
+color: #fff;
+text-align: center;
+border-radius: 6px;
+padding: 5px 0;
+position: absolute;
+z-index: 1;
+/* bottom: 125%; */
+right: 105%;
+margin-left: -60px;
+opacity: 0;
+transition: opacity 0.3s;
+}
+
+
+.tooltip:hover .timeline-tooltip {
+visibility: visible;
+opacity: 1;
+}
+/* end tooltip */
+
