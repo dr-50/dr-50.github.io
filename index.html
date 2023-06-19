@@ -44,30 +44,30 @@
                 /></a>
               </li>
             </ul>
-            <div class="nav-buttons">
+            <!-- <div class="nav-buttons">
               <ul>
-                <li><button>About Me</button></li>
-                <li><button>Resume</button></li>
-                <li><button>Portfolio</button></li>
-                <li><button>Contact</button></li>
+                <li><button id="1" onclick="navActivate(this)">About Me</button></li>
+                <li><button id="2" onclick="navActivate(this)">Resume</button></li>
+                <li><button id="3" onclick="navActivate(this)">Portfolio</button></li>
+                <li><button id="4" onclick="navActivate(this)">Contact</button></li>
               </ul>
-            </div>
+            </div> -->
           </div>
           <div class="col details-body">
             <div class="nav-cards">
-              <button class="card About-Me active">
+              <button class="card About-Me active" id="1" onclick="navActivate(this)">
                 <!-- <h3>About Me</h3> -->
                 About Me
               </button>
-              <button class="card Portfolio">
+              <button class="card Portfolio" id="2" onclick="navActivate(this)">
                 <!-- <h3>Portfolio</h3> -->
                 Portfolio
               </button>
-              <button class="card Contact-Me">
+              <button class="card Contact-Me" id="3" onclick="navActivate(this)">
                 <!-- <h3>Contact Me</h3> -->
                 Contact Me
               </button>
-              <button class="card Resume">
+              <button class="card Resume" id="4" onclick="navActivate(this)">
                 <!-- <h3>Resume</h3> -->
                 Resume
               </button>
@@ -130,16 +130,39 @@
               </div>
             </div>
             <div class="details-card portfolio">
+              <h4>Web Dev Projects</h4>
               <ul>
-                <li>
-                  <a href="https://github.com/dr-50/Fibonacci-python"
-                    >Fibonacci Series (python)</a
-                  >
-                </li>
+                <li><a href="https://dr-50.github.io/ArcheryPractice/">Archery 3D Practice</a></li>
+                <li><a href="https://adamlsn.github.io/songsAndSpirits/">Songs and Spirits</a></li>
+                <li><a href="https://dr-50.github.io/WeatherDashboard/">Weather Dashboard</a></li>
+                
+              </ul>
+              <h4>Coding Challenges</h4>
+              <ul>
+                <li><a href="https://github.com/dr-50/Fibonacci-python">Fibonacci Series (python)</a></li>
+                <li><a href="https://github.com/dr-50/decimaltobinary-python">Convert Number to Binary (python)</a></li>
               </ul>
             </div>
-            <div class="details-card contact"></div>
-            <div class="details-card resume"></div>
+            <div class="details-card contact">
+              <p>Contact me view</p>
+              <ul class="contact-me-link-container">
+                <li>
+                <a class="contact-me-link" href="mailto:devonross50@yahoo.com">📧 devonross50@yahoo.com</a><div class="tooltip"><button onclick="copyContact(this)"><span class="tooltiptext">copy to clipboard</span>📋</button></div>
+              </li>
+              <li>
+                <a class="contact-me-link" href="tel:+920-493-8001">☎️ 920-493-8001</a><div class="tooltip"><button onclick="copyContact(this)"><span class="tooltiptext">copy to clipboard</span>📋</button></div>
+              </li>
+              <li>
+                <a class="contact-me-link" href="https://github.com/dr-50">💻Github</a><div class="tooltip">
+              </li>
+              </ul>
+            </div>
+            <div class="details-card resume">
+              <a href="./assets/Resume.pdf" class="resume-download">Download Resume</a>
+              <iframe class="resume-preview" src="./assets/Resume.pdf"></iframe>
+              <!-- #page=1&zoom=100 -->
+              <!-- <iframe class="resume-preview" src="https://docs.google.com/viewer?srcid=1o1-6PJRiXqaz4OHHqs33ZQMzQPqTu5ESMooz1G1YVcQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe> -->
+            </div>
           </div>
         </div>
       </div>

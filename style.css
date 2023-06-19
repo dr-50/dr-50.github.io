@@ -18,6 +18,11 @@ section{
     display: table-row;
     height: 100%;
 }
+.row::after{
+    content: '';
+    display: table;
+    clear: both;
+}
 .col{
     display: table-cell;
     height: 100%;
@@ -110,7 +115,10 @@ section{
 /* Start of Nav Card Styling */
     .nav-cards{
         display: flex;
-        margin: 0 30% ;
+        margin-bottom: 75px;
+        /* width: 100%; */
+        /* justify-content: center; */
+        /* margin: 0 30% ; */
         /* align-items: center; */
         /* max-width: 150px; */
     }
@@ -118,10 +126,11 @@ section{
         z-index: 1;
         background: #EBEBEB;
         border-radius: 1rem;
-        padding: 2rem;
+        padding: 1.2rem;
         box-shadow: 4px 4px 12px 2px rgb(black, .6);
         transition: .2s;
         margin: 2px;
+        font-size: medium;
     }
 
     .card:hover{
@@ -136,10 +145,15 @@ section{
 
 /* start body detail styling */
 .details-body{
+    
     text-align: center;
+    height: 100vh;
+    display: inline-block;
+    margin-left: 25px;
 }
 .details-card{
     display: none;
+    margin-top: 15px;
 }
 
 .details-card.active{
@@ -159,8 +173,9 @@ section{
 }
 
 .bio-nav{
-    min-width: 60px;
+    min-width: 70px;
     margin: 3px;
+    font-size: medium;
 }
 
 .bio-nav.active{
@@ -171,3 +186,67 @@ section{
 } */
 
 /* end body detail styling */
+
+/* contact me styling */
+
+.contact-me-link-container{
+    text-decoration: none;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70vw;
+    list-style: none;
+    margin-top: 50px;
+
+}
+.contact-me-link-container li{
+    margin-top: 20px;
+}
+.contact-me-link-container button{
+    width: fit-content;
+    padding: 0;
+    /* padding-right: 5px; */
+    background-color: lightgray;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: larger;
+}
+
+.tooltip {
+    position: relative;
+    display: inline-block;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    margin-left: 30px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+  }
+
+/* end of contact me styling */
+/* resume styling */
+/* .details-card.resume{
+     display: block;
+} */
+.resume-download{
+    margin-right: 5vw;
+    margin-left: 10px;
+    align-items: center;
+} 
+ .resume-preview{
+    height: 70vh;
+    width: 60vw;
+}
