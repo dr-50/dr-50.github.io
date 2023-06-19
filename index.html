@@ -5,119 +5,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://code.jquery.com/jquery-3.7.0.slim.min.js"
+      integrity="sha256-tG5mcZUtJsZvyKAxYLVXrmjKBVLd6VpVccqz/r4ypFE="
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/script.js"></script>
+
     <title>DevonRoss</title>
   </head>
 
   <body>
-    <picture>
-      <img class="cover-header" src="./assets/images/cover-header-image.jpg" />
-    </picture>
-
-    <div class="menu-container">
-      <!--Large Screen Menu-->
-      <div class="menu-nav">
-        <!-- <div class="dropdown">
-          <button class="dropbtn">In Progress Projects</button>
-          <div class="dropdown-content">
-            <a
-              href="https://dr-50.github.io/Sarter/"
-              target="_blank"
-              rel="noreferrer noopener"
-              >Sarter Marine Towing</a
-            >
-            <a
-              href="https://dr-50.github.io/ArcheryScores/"
-              target="_blank"
-              rel="noreferrer noopener"
-              >Archery Scores</a
-            >
-          </div>
-        </div>
-        <div class="dropdown">
-          <button class="dropbtn">Projects</button>
-          <div class="dropdown-content">
-            <a
-              href="https://adamlsn.github.io/songsAndSpirits/"
-              target="_blank"
-              rel="noreferrer noopener"
-              >Songs & Spirits</a
-            >
-            <a
-              href="https://dr-50.github.io/WeatherDashboard/"
-              target="_blank"
-              rel="noreferrer noopener"
-              >Weather Dashboard</a
-            >
-          </div>
-        </div> -->
-        <div class="dropdown">
-          <button class="dropbtn">Contact Me</button>
-          <div class="dropdown-content">
-            <a href="mailto:devonross50@yahoo.com">DevonRoss50@yahoo.com 📧</a>
-            <a href="tel:920-493-8001">920-493-8001 ☎</a>
-            <a
-              href="https://github.com/dr-50/"
-              target="_blank"
-              rel="noreferrer noopener"
-              >github <img src="./assets/images/GitHub-Mark-32px.png"
-            /></a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!--End Large Screen Menu-->
-
-    <div id="mySidepanel" class="sidepanel">
-      <!--Mobile Screen Menu-->
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
-      <h3 class="mobile-menu-header">Contact Me</h3>
-      <a href="mailto:devonross50@yahoo.com">DevonRoss50@yahoo.com 📧</a>
-      <a href="tel:920-493-8001">920-493-8001 ☎</a>
-      <!-- <h3 class="mobile-menu-header">Projects</h3>
-      <a
-        href="https://adamlsn.github.io/songsAndSpirits/"
-        target="_blank"
-        rel="noreferrer noopener"
-        >Songs & Spirits</a
-      >
-      <a
-        href="https://dr-50.github.io/WeatherDashboard/"
-        target="_blank"
-        rel="noreferrer noopener"
-        >Weather Dashboard</a
-      >
-      <h3 class="mobile-menu-header">In Progress Projects</h3>
-      <a
-        href="https://dr-50.github.io/Sarter/"
-        target="_blank"
-        rel="noreferrer noopener"
-        >Sarter Marine Towing</a
-      >
-      <a
-        href="https://dr-50.github.io/ArcheryScores/"
-        target="_blank"
-        rel="noreferrer noopener"
-        >Archery Scores</a
-      > -->
-    </div>
-    <div class="NavBar">
-      <button class="openbtn" id="openbtn" onclick="openNav()">☰</button>
-    </div>
-    <!--End Mobile Screen Menu-->
-
-    <!-- End of Menu  -->
-    <div class="row">
-      <div class="column about-column">
-        <div class="about-me">
-          <img
-            src="./assets/images/personal-photo.jpg"
-            alt="personal photo"
-            class="personal-photo"
-          />
-          <h2>Devon Ross</h2>
-          <h4>Principal Solutions Architect</h4>
-          <h5>Constellation NewEnergy-Gas Division, LLC</h5>
-          <div class="contact-logos">
+    <section>
+      <div class="col-container">
+        <div class="row">
+          <div class="col side-menu">
+            <img
+              class="personal-photo"
+              src="./assets/images/personal-photo.jpg"
+              alt=""
+            />
+            <h2>Devon Ross</h2>
+            <h5>Principal Solutions Architect</h5>
+            <h5>Constellation NewEnergy-Gas</h5>
             <ul class="contact-logo-list">
               <li class="contact-logo-list-item">
                 <a href="mailto:devonross50@yahoo.com">📧</a>
@@ -134,237 +44,223 @@
                 /></a>
               </li>
             </ul>
-          </div>
-        </div>
-      </div>
-
-      <div class="column biography-column">
-        <div class="biography">
-          <h3>Biography</h3>
-          <div class="tabs">
-            <div class="tabs__sidebar">
-              <button class="tabs__button" data-for-tab="One">Past</button>
-              <button
-                class="tabs__button tabs__button--active"
-                data-for-tab="Two"
-              >
-                Present
-              </button>
-              <button class="tabs__button" data-for-tab="Three">Future</button>
-            </div>
-            <div class="tabs__content" data-tab="One">
-              <h2>Past</h2>
-              <p>
-                I am a University of Wisconsin-Green Bay graduate, obtaining a
-                Bachelor of Science in Economics. For the past 8 years I have
-                held various roles within Constellation NewEnergy, spanning from
-                Account Management, Volume Management, to my current role as a
-                Solutions Architect. Within Account Management my focus was held
-                by managing customer relationships for large volume accounts.
-                Within Volume Management I was tasked with forecasting customer
-                loads and managing storage totaling more than 4 BCF. I have
-                continued education with a certificate in Full Stack Web
-                Development from the University of Wisconsin Extended Campus.
-              </p>
-            </div>
-            <div class="tabs__content tabs__content--active" data-tab="Two">
-              <h2>Present</h2>
-              <p>
-                I am currently holding the role of Principal Solutions Architect
-                within Constellation NewEnergy's Operations department. I am
-                tasked with writing requirements, acting as a median from the
-                business to the development team, and creating department
-                specific tools to allow for improved efficiencies. While most of
-                my work related tools revolve around Microsoft applications, in
-                some free time outside of work, I have continued to explore
-                additional languages outside of my web development knowledge of
-                HTML, CSS, and JavaScript. I am currently expanding my python
-                related skills by working through various coding challenges.
-              </p>
-            </div>
-            <div class="tabs__content" data-tab="Three">
-              <h2>Future</h2>
-              <p>
-                I have enjoyed the challenges and learning that goes along with
-                coding. I have been accepted into Rutgers University to obtain a
-                Masters in Data Science and look forward to the opportunity to
-                begin the program in the future. I look forward to the
-                opportunities of expanding into many other languages to further
-                my coding growth. Professionally I continue to gain knowledge
-                and experience to one day find myself in more of a Data Analyst
-                or potentially a Data Scientist role.
-              </p>
-            </div>
-          </div>
-        </div>
-        <div class="projects">
-          <div class="tabs">
-            <div class="tabs__sidebar">
-              <button
-                class="tabs__button tabs__button--active"
-                data-for-tab="OneProjects"
-              >
-                Coding Challenges
-              </button>
-              <button class="tabs__button" data-for-tab="TwoProjects">
-                Web Dev Projects
-              </button>
-            </div>
-            <div
-              class="tabs__content tabs__content--active"
-              data-tab="OneProjects"
-            >
-              <h2>Coding Challenges</h2>
+            <!-- <div class="nav-buttons">
               <ul>
+                <li><button id="1" onclick="navActivate(this)">About Me</button></li>
+                <li><button id="2" onclick="navActivate(this)">Resume</button></li>
+                <li><button id="3" onclick="navActivate(this)">Portfolio</button></li>
+                <li><button id="4" onclick="navActivate(this)">Contact</button></li>
+              </ul>
+            </div> -->
+          </div>
+          <div class="col details-body">
+            <div class="nav-cards">
+              <button class="card About-Me active" id="1" onclick="navActivate(this)">
+                <!-- <h3>About Me</h3> -->
+                About Me
+              </button>
+              <button class="card Portfolio" id="2" onclick="navActivate(this)">
+                <!-- <h3>Portfolio</h3> -->
+                Portfolio
+              </button>
+              <button class="card Contact-Me" id="3" onclick="navActivate(this)">
+                <!-- <h3>Contact Me</h3> -->
+                Contact Me
+              </button>
+              <button class="card Resume" id="4" onclick="navActivate(this)">
+                <!-- <h3>Resume</h3> -->
+                Resume
+              </button>
+            </div>
+            <div class="details-card bio active">
+              <!-- <div class="bio-container active"> -->
+                <!-- <div class="bio-nav-cards">
+                  <button class="bio-nav" onclick="bioActivate(event)">
+                    Past
+                  </button>
+                  <button class="bio-nav active" onclick="bioActivate(event)">
+                    Current
+                  </button>
+                  <button class="bio-nav" onclick="bioActivate(event)">
+                    Future
+                  </button>
+                </div> -->
+                
+              <!-- </div> -->
+              <div class="details-mini-card bio Current active">
+                <h4>Present</h4>
+                <p>
+                  I am currently holding the role of Principal Solutions
+                  Architect within Constellation NewEnergy's Operations
+                  department. I am tasked with writing requirements, acting as a
+                  median from the business to the development team, and creating
+                  department specific tools to allow for improved efficiencies.
+                  While most of my work related tools revolve around Microsoft
+                  applications, in some free time outside of work, I have
+                  continued to explore additional languages outside of my web
+                  development knowledge of HTML, CSS, and JavaScript. I am
+                  currently expanding my python related skills by working
+                  through various coding challenges.
+                </p>
+                <h4>Past</h4>
+                <p>
+                  I am a University of Wisconsin-Green Bay graduate, obtaining a
+                  Bachelor of Science in Economics. For the past 8 years I have
+                  held various roles within Constellation NewEnergy, spanning
+                  from Account Management, Volume Management, to my current role
+                  as a Solutions Architect. Within Account Management my focus
+                  was held by managing customer relationships for large volume
+                  accounts. Within Volume Management I was tasked with
+                  forecasting customer loads and managing storage totaling more
+                  than 4 BCF. I have continued education with a certificate in
+                  Full Stack Web Development from the University of Wisconsin
+                  Extended Campus.
+                </p>
+                <h4>Future</h4>
+                <p>
+                  I have enjoyed the challenges and learning that goes along
+                  with coding. I have been accepted into Rutgers University to
+                  obtain a Masters in Data Science and look forward to the
+                  opportunity to begin the program in the future. I look forward
+                  to the opportunities of expanding into many other languages to
+                  further my coding growth. Professionally I continue to gain
+                  knowledge and experience to one day find myself in more of a
+                  Data Analyst or potentially a Data Scientist role.
+                </p>
+              </div>
+              <div class="column timeline-column">
+                <div class="timeline">
+                  <h3>Timeline</h3>
+                  <ul>
+                    <li class="work">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Solutions Architect
+                          <span class="timeline-tooltip">
+                            Responsible for creating tools and resources for the
+                            Operations Department.
+                          </span>
+                        </h4>
+                        <h6>March 2022</h6>
+                        <h6>Constellation NewEnergy</h6>
+                      </div>
+                    </li>
+                    <li class="school">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Full Stack Web Development
+                          <span class="timeline-tooltip">Focus in Javascript.</span>
+                        </h4>
+                        <h6>August 2021</h6>
+                        <h6>Coding Bootcamp Certification</h6>
+                        <h6>University of Wisconsin Extended Campus</h6>
+                      </div>
+                    </li>
+                    <li class="work">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Volume Manager
+                          <span class="timeline-tooltip"
+                            >Reponsible for forecasting customer load, managing
+                            relationship with utilities, balancing customer load within
+                            utility requirements.
+                          </span>
+                        </h4>
+                        <h6>November 2018</h6>
+                        <h6>Constellation NewEnergy</h6>
+                      </div>
+                    </li>
+                    <li class="work">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Account Manager<span class="timeline-tooltip"
+                            >Responsible for customer relations, onboarding, reporting,
+                            and renewals</span
+                          >
+                        </h4>
+                        <h6>May 2016</h6>
+                        <h6>Constellation NewEnergy</h6>
+                      </div>
+                    </li>
+                    <li class="school">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Economics<span class="timeline-tooltip"
+                            >Minor in Business Administration</span
+                          >
+                        </h4>
+                        <h6>May 2016</h6>
+                        <h6>Bachelor Degree</h6>
+                        <h6>University of Wisconsin-Green Bay</h6>
+                      </div>
+                    </li>
+                    <li class="work">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Account Manager-Intern<span class="timeline-tooltip"
+                            >Responsible for managing customer relationships, reporting,
+                            and enrollments.</span
+                          >
+                        </h4>
+                        <h6>October 2014</h6>
+                        <h6>Integrys Energy Services</h6>
+                      </div>
+                    </li>
+                    <li class="school">
+                      <div class="timeline-item tooltip">
+                        <h4>
+                          Business Management<span class="timeline-tooltip">
+                            Also acquired certifications in Business Operations and
+                            Supervision.
+                          </span>
+                        </h4>
+                        <h6>May 2014</h6>
+                        <h6>Associate Degree</h6>
+                        <h6>NorthEast Wisconsin Technical College</h6>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="details-card portfolio">
+              <!-- <div class="portfolio-container"> -->
+              <h4>Web Dev Projects</h4>
+              <ul>
+                <li><a href="https://dr-50.github.io/ArcheryPractice/">Archery 3D Practice</a></li>
+                <li><a href="https://adamlsn.github.io/songsAndSpirits/">Songs and Spirits</a></li>
+                <li><a href="https://dr-50.github.io/WeatherDashboard/">Weather Dashboard</a></li>
+                
+              </ul>
+              <h4>Coding Challenges</h4>
+              <ul>
+                <li><a href="https://github.com/dr-50/Fibonacci-python">Fibonacci Series (python)</a></li>
+                <li><a href="https://github.com/dr-50/decimaltobinary-python">Convert Number to Binary (python)</a></li>
+              </ul>
+            <!-- </div> -->
+            </div>
+            <div class="details-card contact">
+              <ul class="contact-me-link-container">
                 <li>
-                  <a href="https://github.com/dr-50/Fibonacci-python"
-                    >Fibonacci Series (python)</a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/dr-50/decimaltobinary-python"
-                    >Convert Number to Binary (python)</a
-                  >
-                </li>
-                <li>
-                  <a href="https://github.com/dr-50/MinMaxFinder-python"
-                    >Min Max Finder (python)</a
-                  >
-                </li>
+                <a class="contact-me-link" href="mailto:devonross50@yahoo.com">📧 devonross50@yahoo.com</a><div class="tooltip"><button onclick="copyContact(this)"><span class="tooltiptext">copy to clipboard</span>📋</button></div>
+              </li>
+              <li>
+                <a class="contact-me-link" href="tel:+920-493-8001">☎️ 920-493-8001</a><div class="tooltip"><button onclick="copyContact(this)"><span class="tooltiptext">copy to clipboard</span>📋</button></div>
+              </li>
+              <li>
+                <a class="contact-me-link" href="https://github.com/dr-50">💻Github</a><div class="tooltip">
+              </li>
               </ul>
             </div>
-            <div class="tabs__content" data-tab="TwoProjects">
-              <h2>Web Dev Projects</h2>
-              <ul>
-                <li>
-                  <a
-                    href="https://adamlsn.github.io/songsAndSpirits/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >Songs and Spirits</a
-                  >
-                </li>
-                <li>
-                  <a
-                    href="https://dr-50.github.io/WeatherDashboard/"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    >Weather Dashboard</a
-                  >
-                </li>
-              </ul>
+            <div class="details-card resume">
+              <a href="./assets/Resume.pdf" class="resume-download">Download Resume</a>
+              <iframe class="resume-preview" id="resume-preview" src="./assets/Resume.pdf"></iframe>
+              <!-- #page=1&zoom=100 -->
+              <!-- <iframe class="resume-preview" src="https://docs.google.com/viewer?srcid=1o1-6PJRiXqaz4OHHqs33ZQMzQPqTu5ESMooz1G1YVcQ&pid=explorer&efh=false&a=v&chrome=false&embedded=true"></iframe> -->
             </div>
           </div>
         </div>
       </div>
-      <div class="column timeline-column">
-        <div class="timeline">
-          <h3>Timeline</h3>
-          <ul>
-            <li class="work">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Solutions Architect
-                  <span class="timeline-tooltip">
-                    Responsible for creating tools and resources for the
-                    Operations Department.
-                  </span>
-                </h4>
-                <h6>March 2022</h6>
-                <h6>Constellation NewEnergy</h6>
-              </div>
-            </li>
-            <li class="school">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Full Stack Web Development
-                  <span class="timeline-tooltip">Focus in Javascript.</span>
-                </h4>
-                <h6>August 2021</h6>
-                <h6>Coding Bootcamp Certification</h6>
-                <h6>University of Wisconsin Extended Campus</h6>
-              </div>
-            </li>
-            <li class="work">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Volume Manager
-                  <span class="timeline-tooltip"
-                    >Reponsible for forecasting customer load, managing
-                    relationship with utilities, balancing customer load within
-                    utility requirements.
-                  </span>
-                </h4>
-                <h6>November 2018</h6>
-                <h6>Constellation NewEnergy</h6>
-              </div>
-            </li>
-            <li class="work">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Account Manager<span class="timeline-tooltip"
-                    >Responsible for customer relations, onboarding, reporting,
-                    and renewals</span
-                  >
-                </h4>
-                <h6>May 2016</h6>
-                <h6>Constellation NewEnergy</h6>
-              </div>
-            </li>
-            <li class="school">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Economics<span class="timeline-tooltip"
-                    >Minor in Business Administration</span
-                  >
-                </h4>
-                <h6>May 2016</h6>
-                <h6>Bachelor Degree</h6>
-                <h6>University of Wisconsin-Green Bay</h6>
-              </div>
-            </li>
-            <li class="work">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Account Manager-Intern<span class="timeline-tooltip"
-                    >Responsible for managing customer relationships, reporting,
-                    and enrollments.</span
-                  >
-                </h4>
-                <h6>October 2014</h6>
-                <h6>Integrys Energy Services</h6>
-              </div>
-            </li>
-            <li class="school">
-              <div class="timeline-item tooltip">
-                <h4>
-                  Business Management<span class="timeline-tooltip">
-                    Also acquired certifications in Business Operations and
-                    Supervision.
-                  </span>
-                </h4>
-                <h6>May 2014</h6>
-                <h6>Associate Degree</h6>
-                <h6>NorthEast Wisconsin Technical College</h6>
-              </div>
-            </li>
-          </ul>
-          <div class="resume-download">
-            <a href="assets/Resume.docx">Download Resume</a>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="Resume"></div>
-    <script src="./assets/js/script.js"></script>
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    </section>
   </body>
-  <!-- <footer>
-    <span>Thank You For Visiting!</span>
-  </footer> -->
 </html>

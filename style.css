@@ -1,93 +1,290 @@
-
-* {
+*{
     margin: 0;
-    
+    /* height: 100%; */
 }
-body{
-    background-color: gainsboro;
+section{
+    /* display: block; */
+    margin: 0;
+    min-height: 0;
+    overflow: hidden;
+    width: 100%;
+}
+.col-container{
+    /* display: table; */
+    width: 100%;
+    height: 100%;
+}
+.row{
+    /* display: table-row; */
+    height: 100%;
+}
+/* .row::after{
+    content: '';
+    display: table;
+    clear: both;
+} */
+.col{
+    display: table-cell;
+    height: 100%;
+}
+/* .col>.content{
+    height: 100%;
+} */
+/* menu styling */
+.side-menu{
+    width: 100vw;
+    background-color: slategray;
+    text-align: center;
+}
+.personal-photo{
+    height: 150px;
+    width: 100px;
+    margin-top: 50px;
+}
+.contact-logo {
+    display: flex;
+
+}
+
+.contact-logo-list {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+}
+
+.contact-logo-list-item {
+    float: left;
+    margin: 5px;
+}
+
+.contact-logo-list-item img {
+    height: 20px;
+    width: 20px;
+}
+
+.nav-buttons{
+    margin-top: 50px;
+    /* display: grid;
+    place-content: center; */
+    height: 200px;
+    position:relative;
+}
+.nav-buttons ul{
+    /* justify-content: center; */
+    height: 200px;
+    /* display: grid;
+    place-content: center; */
+    text-align: center;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-65%);
+    margin: 0;
+    position: absolute;
+
+}
+.nav-buttons ul li {
+    list-style: none;
+    /* width: 125px; */
+}
+.nav-buttons ul li button{
+    background-color: antiquewhite;
+    /* background: transparent; */
+    width: 125px;
+    /* border: 1px solid black; */
+    margin-top: 5px;
+    cursor: pointer;
+    /* box-shadow: inset 0 0 0 1px currentColor; */
+}
+
+.nav-buttons ul li button{
+    background-color: lightgray;
+    border-width: 3px;
+    border-style: solid;
+    border-image: linear-gradient(to right, darkgray, white) 1;
+}
+
+.nav-buttons ul li button:hover{
+    background-color: lightblue;
+    opacity: .7;
+    /* -moz-transition: all .5s ease-in-out;
+    -o-transition: all .5s ease-in-out;
+    -webkit-transition: all .5s ease-in-out; */
+    transition: all .5s ease-in-out;
+
+}
+
+/* end menu styling */
+
+/* Start of Nav Card Styling */
+    .nav-cards{
+        display: flex;
+        margin-bottom: 25px;
+        margin-top: 10px;
+        /* width: 100%; */
+        justify-content: center;
+        /* margin: 0 30% ; */
+        align-items: center;
+        /* max-width: 150px; */
+    }
+    .card{
+        z-index: 1;
+        background: #EBEBEB;
+        border-radius: 1rem;
+        padding: 1.2rem;
+        box-shadow: 4px 4px 12px 2px rgb(black, .6);
+        transition: .2s;
+        margin: 2px;
+        font-size: medium;
+        min-height: 75px;
+    }
+
+    .card:hover{
+        transform: translateY(-.5rem);
+    }
+    .card.active{
+        background-color: lightslategray;
+    }
+
+
+/* end of nav card styling */
+
+/* start body detail styling */
+.details-body{
+    
+    text-align: center;
+    /* height: 100vh; */
+    /* display: inline-block; */
     display: flex;
     flex-direction: column;
+    /* margin-left: 25px; */
+}
+.details-card{
+    display: none;
+    margin-top: 15px;
 }
 
-
-.temp-box{
-    margin-top: 40px;
-    margin-left: 5px;
-    height: 200px;
-    width: 90%;
-    border: 2px solid black;
-}
-
-.cover-header {
-height: 100px;
-width: 100%;
-margin-bottom: 0;
-padding-bottom: 0;
-}
-
-.colorful-display-color{
-    background-color: gainsboro;
-    color: black;
-}
-
-.display-color{
-    width: 75px;
-    /* border: black 2px solid; */
+.details-card.active{
     display: flex;
-    flex-direction:row;
+    justify-content: center;
+}
+
+/* .details-card.{
+    display: flex;
+} */
+
+.details-mini-card.active{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+
+.details-mini-card{
+    display: none;
+}
+
+.details-mini-card h4{
+    margin-top: 30px;
+    display: flex;
+}
+.details-mini-card p{
+    text-align: start;
+}
+
+.bio-nav{
+    min-width: 70px;
+    margin: 3px;
+    font-size: medium;
+}
+
+.bio-nav.active{
+    background-color: lightslategray;
+}
+
+/* .bio-nav:hover{
+    transform: translateX(-.25rem);
+} */
+
+/* end body detail styling */
+
+/* start of portfolio styling */
+
+.portfolio h4{
+    margin-left: 25px;
+}
+/* end of portfolio styling */
+
+/* contact me styling */
+
+.contact-me-link-container{
+    text-decoration: none;
+    display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    border-radius: 25px;
+    flex-direction: column;
+    width: 70vw;
+    list-style: none;
+    margin-top: 50px;
+
+}
+.contact-me-link-container li{
+    margin-top: 20px;
+}
+.contact-me-link-container button{
+    width: fit-content;
+    padding: 0;
+    /* padding-right: 5px; */
+    background-color: lightgray;
+    border-radius: 5px;
     margin-left: 10px;
+    font-size: larger;
 }
 
-.display-color #lightDisplay {
-    background-color: gainsboro;
-    border-radius: 25px;
-}
-
-
-.color-display-tooltip {
+.tooltip {
     position: relative;
     display: inline-block;
   }
   
-.color-display-tooltip {
-visibility: hidden;
-font-size: 14px;
-font-weight: 200;
-width: 120px;
-background-color: #555;
-color: #fff;
-text-align: center;
-border-radius: 6px;
-padding: 5px 0;
-position: absolute;
-z-index: 1;
-/* bottom: 125%; */
-right: 105%;
-margin-left: -60px;
-opacity: 0;
-transition: opacity 0.3s;
-}
-.color-display-tooltip {
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: black;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    margin-left: 30px;
+    z-index: 1;
+  }
+  
+  .tooltip:hover .tooltiptext {
     visibility: visible;
-    opacity: 1;
-    }
-/* End change display color */
-.column{
-    float: left;
-    width: 40%;
+  }
+
+/* end of contact me styling */
+
+/* resume styling */
+.details-card.resume a{
+     height: 30px;
 }
-.about-column{
-    width: 25%;
+.resume-download{
+    margin-right: 5vw;
+    margin-left: 10px;
+    align-items: center;
+} 
+ .resume-preview{
+    height: 70vh;
+    width: 60vw;
 }
-.biography-column{
-    width: 50%;
-}
+/* End of Resume styling */
+
+/* Start of timeline bio styling */
 .timeline-column{
     float: right;
-    width:19%;
+    width:25%;
     margin-right: 20px;
 }
 
@@ -182,356 +379,3 @@ opacity: 1;
 }
 /* end tooltip */
 
-
-.row:after {
-    content:"";
-    display: table;
-    clear: both;
-}
-
-.sidepanel, .NavBar{
-    display:none;
-}
-
-.menu-container{
-    background-color: cadetblue;
-    /* padding-top: 15px; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-    margin-top: -4px;
-    padding-top: 0;
-    justify-content: space-between;
-}
-
-.menu-nav{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row-reverse;
-
-}
-
-.menu-nav button {
-   background-color: cadetblue;
-   border: none;
-
-}
-
-.dropbtn {
-    /* background-color: cadetblue; */
-    background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
-    color: black;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    margin-right: 150px;
-    font-weight: Bold;
-  }
-  
-  
-  .dropdown {
-    position: relative;
-    display: inline-block;
-    
-  }
-  
-  .dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f1f1f1;
-    min-width: 240px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-  }
-  
-  .dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-  }
-
-  .dropdown-content a img{
-      height: 20px;
-      width: 20px;
-  }
-  
-  /* Change color of dropdown links on hover */
-  .dropdown-content a:hover {
-      background-color: #ddd;
-    }
-  
-  /* Show the dropdown menu on hover */
-  .dropdown:hover .dropdown-content {
-      display: block;
-    }
-  
-  /* Change the background color of the dropdown button when the dropdown content is shown */
-  .dropdown:hover .dropbtn {
-      background-image:linear-gradient(rgb(240, 230, 211), rgb(241, 184, 146));
-}
-
-
-/* Start of Current Responsibilities */
-.about-me{
-    margin: 15px;
-}
-.about-me h2{
-    margin-top: 10px;
-}
-.about-me h4, .about-me h5{
-    color: lightslategray;
-}
-
-.personal-photo{
-    height: 200px;
-    width: 150px;
-}
-
-.contact-logo {
-    display: flex;
-}
-
-.contact-logo-list {
-    list-style-type: none;
-}
-
-.contact-logo-list-item {
-    float: left;
-    margin: 5px;
-}
-
-.contact-logo-list-item img {
-    height: 20px;
-    width: 20px;
-}
-
-
-.job-desc{
-    max-width: 45%;
-}
-
-/* End of Current Responsibilities */
-
-.biography{
-    font-size: larger;
-    display: flex;
-    flex-direction: column;
-    margin-top: 50px;
-    
-}
-.biography h3{
-    margin-top: 15px;
-    margin-bottom: 5px;
-}
-
-.biography p{
-    margin-top: 10px;
-}
-
-/* start of biography */
-.tabs{
-    border: 1px solid black;
-    display: flex;
-}
-
-.tabs__sidebard {
-    width: 125px;
-    flex-shrink: 0;
-    background: rgb(243, 227, 198);
-}
-
-.tabs__button {
-    display: block;
-    padding: 10px;
-    background: cadetblue;
-    border: none;
-    width: 100%;
-    outline: none;
-    cursor: pointer;
-    color: white;
-}
-
-.tabs__button:active{
-    background: cadetblue;
-}
-
-.tabs__button:not(:last-of-type) {
-    border-bottom: 1px solid rgb(243, 227, 198);;
-}
-
-.tabs__button--active {
-    font-weight: bold;
-    border-right: 2px solid teal;
-    background-color: rgb(243, 227, 198);
-    color: black;
-}
-
-.tabs__content {
-    padding: 15px;
-    font-size: 1rem;
-    display: none;
-}
-
-.tabs__content--active{
-    display: block;
-}
-
-.tabs__content > :first-child {
-    margin-top: 0;
-}
-/* end of biography  */
-
-/* start of projects/challenges */
-.projects{
-    margin-top: 25px;
-}
-
-.projects ul{
-    list-style-type: none;
-    margin-top: 5px;
-}
-
-/* .projects li a{
-    text-decoration: none;
-    color: black;
-} */
-
-.contact-me img{
-    margin-left: 10px;
-    height: 32px;
-    width: 32px;
-}
-
-.resume-download{
-    margin-top: 20px;
-    border: black solid 2px;
-    background-color: rgb(243, 197, 167);
-    box-shadow: darkgrey 3px 5px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-}
-
-.resume-download:hover{
-    opacity: .7;
-}
-
-.resume-download a {
-    text-decoration: none;
-    color: black;
-    margin: 10px;
-}
-
-footer{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 50px;
-    background-color: purple;
-}
-
-@media (max-width: 770px){
-    .row {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        align-content: center;
-    }
-    /* footer{
-        position: relative;
-        margin-top: 20px;
-        bottom: 0;
-
-    } */
-    .about-column, .biography-column{
-        width: 60%;
-        float: left;
-    }
-    .timeline-column{
-        width: 30%;
-        float: right;
-    }
-}
-
-@media (max-width: 595px) {
-    .dropdown{
-        display: none;
-    }
-    /* NavBar */
-.sidepanel {
-    width: 0;
-    display: block;
-    position: fixed;
-    z-index: 1;
-    height: 100vh;
-    top: 0;
-    left: 0;
-    background-color: rgb(87, 85, 85);
-    overflow-x: hidden;
-    transition: 0.25s;
-    padding-top: 60px;
-  }
-  
-  .sidepanel a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 18px;
-    color: white;
-    display: block;
-    /* transition: 0.1s; */
-  }
-  
-  .sidepanel a:hover {
-    color: #f1f1f1;
-  }
-  
-  .sidepanel .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-  }
-  
-  .NavBar {
-    display: flex;
-    flex-wrap: wrap;
-    color: black;
-    width: 100%;
-    background-color: cadetblue;
-  }
-  
-  .NavBar a {
-    position: absolute;
-    left: 75px;
-    margin-top: 20px;
-    text-decoration: none;
-    color: white;
-  }
-  
-  .openbtn {
-    font-size: 20px;
-    cursor: pointer;
-    background-color: cadetblue;
-    color: white;
-    padding: 10px 15px;
-    border: none;
-    text-align: left;
-    border: black 1px solid;
-    box-shadow: 2px 1px black;
-  }
-  
-  .openbtn:hover {
-    background-color: #444;
-  }
-  .mobile-menu-header{
-      color: cadetblue;
-      text-decoration: underline;
-      margin-left: 8px;
-  }
-  .display-color{
-      display: none;
-  }
-}
