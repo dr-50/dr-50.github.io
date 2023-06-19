@@ -3,50 +3,55 @@
     /* height: 100%; */
 }
 section{
-    display: block;
+    /* display: block; */
     margin: 0;
     min-height: 0;
     overflow: hidden;
     width: 100%;
 }
 .col-container{
-    display: table;
+    /* display: table; */
     width: 100%;
     height: 100%;
 }
 .row{
-    display: table-row;
+    /* display: table-row; */
     height: 100%;
 }
-.row::after{
+/* .row::after{
     content: '';
     display: table;
     clear: both;
-}
+} */
 .col{
     display: table-cell;
     height: 100%;
 }
-.col>.content{
+/* .col>.content{
     height: 100%;
-}
+} */
 /* menu styling */
 .side-menu{
-    width: 15%;
+    width: 100vw;
     background-color: slategray;
     text-align: center;
 }
 .personal-photo{
-    height: 100px;
+    height: 150px;
     width: 100px;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 .contact-logo {
     display: flex;
+
 }
 
 .contact-logo-list {
     list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
 }
 
 .contact-logo-list-item {
@@ -115,11 +120,12 @@ section{
 /* Start of Nav Card Styling */
     .nav-cards{
         display: flex;
-        margin-bottom: 75px;
+        margin-bottom: 25px;
+        margin-top: 10px;
         /* width: 100%; */
-        /* justify-content: center; */
+        justify-content: center;
         /* margin: 0 30% ; */
-        /* align-items: center; */
+        align-items: center;
         /* max-width: 150px; */
     }
     .card{
@@ -131,6 +137,7 @@ section{
         transition: .2s;
         margin: 2px;
         font-size: medium;
+        min-height: 75px;
     }
 
     .card:hover{
@@ -147,9 +154,11 @@ section{
 .details-body{
     
     text-align: center;
-    height: 100vh;
-    display: inline-block;
-    margin-left: 25px;
+    /* height: 100vh; */
+    /* display: inline-block; */
+    display: flex;
+    flex-direction: column;
+    /* margin-left: 25px; */
 }
 .details-card{
     display: none;
@@ -158,6 +167,7 @@ section{
 
 .details-card.active{
     display: flex;
+    justify-content: center;
 }
 
 /* .details-card.{
@@ -165,11 +175,21 @@ section{
 } */
 
 .details-mini-card.active{
-    display: block;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
 }
 
 .details-mini-card{
     display: none;
+}
+
+.details-mini-card h4{
+    margin-top: 30px;
+    display: flex;
+}
+.details-mini-card p{
+    text-align: start;
 }
 
 .bio-nav{
@@ -181,11 +201,19 @@ section{
 .bio-nav.active{
     background-color: lightslategray;
 }
+
 /* .bio-nav:hover{
     transform: translateX(-.25rem);
 } */
 
 /* end body detail styling */
+
+/* start of portfolio styling */
+
+.portfolio h4{
+    margin-left: 25px;
+}
+/* end of portfolio styling */
 
 /* contact me styling */
 
@@ -237,10 +265,11 @@ section{
   }
 
 /* end of contact me styling */
+
 /* resume styling */
-/* .details-card.resume{
-     display: block;
-} */
+.details-card.resume a{
+     height: 30px;
+}
 .resume-download{
     margin-right: 5vw;
     margin-left: 10px;
@@ -249,16 +278,13 @@ section{
  .resume-preview{
     height: 70vh;
     width: 60vw;
-
-
-
 }
+/* End of Resume styling */
 
-
-
+/* Start of timeline bio styling */
 .timeline-column{
     float: right;
-    width:19%;
+    width:25%;
     margin-right: 20px;
 }
 

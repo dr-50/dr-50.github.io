@@ -26,31 +26,7 @@ function bioActivate(event) {
 
 //page navigation activate/inactive aboutme/portfoio/contactme/resume
 function navActivate(element){
-  //remove active class from detail-card body(switch view from nav)
-  var elems = document.querySelectorAll('.details-card');
-  [].forEach.call(elems, function(el){
-    el.classList.remove('active')
-  })
-  //add active class to selected nav (switch view from nav)
-  //used a switch to identify button clicked id and align with order of expected results. Enhancements needed to increase logic ere
-  var el = element.id
-  console.log(el)
-  switch(el){
-    case "1":
-      //since getElementsByClassName returns a collection of elements must included [0]
-      document.getElementsByClassName("details-card bio")[0].className += ' active';
-      break;
-    case "2":
 
-      document.getElementsByClassName("details-card portfolio")[0].classList += ' active';
-      break;
-    case "3":
-      document.getElementsByClassName("details-card contact")[0].className += ' active';
-
-      break;
-    case "4":
-      document.getElementsByClassName("details-card resume")[0].className += ' active';
-  }
 
 
 
@@ -62,6 +38,36 @@ function navActivate(element){
   
   //add active class to button
   event.target.className += ' active'
+
+
+    //remove active class from detail-card body(switch view from nav)
+    var elems = document.querySelectorAll('.details-card');
+    [].forEach.call(elems, function(el){
+      el.classList.remove('active')
+    })
+    //add active class to selected nav (switch view from nav)
+    //used a switch to identify button clicked id and align with order of expected results. Enhancements needed to increase logic ere
+    var el = element.id
+    console.log(el)
+    switch(el){
+      case "1":
+        //since getElementsByClassName returns a collection of elements must included [0]
+        document.getElementsByClassName("details-card bio")[0].className += ' active';
+        break;
+      case "2":
+  
+        document.getElementsByClassName("details-card portfolio")[0].classList += ' active';
+        break;
+      case "3":
+        document.getElementsByClassName("details-card contact")[0].className += ' active';
+  
+        break;
+      case "4":
+        
+        document.getElementsByClassName("details-card resume")[0].className += ' active';
+        document.getElementById('resume-preview').contentWindow.location.reload();
+  
+    }
 
 }
 
