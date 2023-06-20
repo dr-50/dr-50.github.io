@@ -379,3 +379,18 @@ opacity: 1;
 }
 /* end tooltip */
 
+@media screen and (max-width: 670px) {
+    .details-card.active{
+        max-width: 80%;
+        margin-left: 10px;
+    }
+    .card{
+        padding: .3rem;
+    }
+    .bio{
+        margin-right: 8px;
+    }
+    .portfolio{
+        flex-wrap: wrap;
+    }
+}
