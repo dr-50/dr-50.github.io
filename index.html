@@ -240,17 +240,13 @@
             <!-- </div> -->
             </div>
             <div class="details-card contact">
-              <ul class="contact-me-link-container">
-                <li>
-                <a class="contact-me-link" href="mailto:devonross50@yahoo.com">📧 devonross50@yahoo.com</a><div class="tooltip"><button onclick="copyContact(this)"><span class="tooltiptext">copy to clipboard</span>📋</button></div>
-              </li>
-              <li>
-                <a class="contact-me-link" href="tel:+920-493-8001">☎️ 920-493-8001</a><div class="tooltip"><button onclick="copyContact(this)"><span class="tooltiptext">copy to clipboard</span>📋</button></div>
-              </li>
-              <li>
-                <a class="contact-me-link" href="https://github.com/dr-50">💻Github</a><div class="tooltip">
-              </li>
-              </ul>
+              <div class="dialValue" id="dialValue"><span>Hover The Dial</span></div>
+              <div class="container" id="dialContainer">
+                  <div class="quarter top" onmouseover="dialSelectorPhone()">☎️</div>
+                  <div class="quarter right" onmouseover="dialSelectorEmail()">📧</div>
+                  <div class="quarter bottom" onmouseover="dialSelectorGit()"><img src="./assets/images/GitHub-Mark-32px.png"/></div>
+                  <div class="quarter left" onmouseover="dialSelectorLinkedIn()"><img src="./assets/images/LI-In-Bug.png" alt=""></div>
+              </div>
             </div>
             <div class="details-card resume">
               <a href="./assets/Resume.pdf" class="resume-download">Download Resume</a>

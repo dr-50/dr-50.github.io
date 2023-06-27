@@ -169,6 +169,10 @@ section{
     display: flex;
     justify-content: center;
 }
+.contact{
+    flex-direction: column;
+    align-items: center;
+}
 
 /* .details-card.{
     display: flex;
@@ -263,6 +267,87 @@ section{
   .tooltip:hover .tooltiptext {
     visibility: visible;
   }
+
+
+.dialValue{
+    margin-bottom: 15px;
+}
+.dialValue span{
+    color: gray;
+}
+.dialValue a{
+    text-decoration: none;
+    color: black;
+}
+.container{
+    position: relative;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    /* border: 1px solid black; */
+    /* line-height: 60px; */
+    text-align: center;
+    margin-bottom: 5px;
+}
+.quarter{
+    position: absolute;
+    width: 75px; 
+    height: 75px; 
+    background-color: bisque;
+    transition: transform .5s;
+    opacity: .5s;
+    border: 1px solid black;
+    /* text-align: center; */
+}
+
+.top{
+    left: 0;
+    top: 0;
+    border-top-left-radius: 75px;
+    line-height: 75px;
+}
+.top:hover{
+    z-index: 2;
+    box-shadow: 0px 0px 20px black
+}
+.right{
+    left: 75px;
+    top: 0;
+    border-top-right-radius: 75px;
+    line-height: 75px;
+    /* rotate: 90deg; */
+}
+.right:hover{
+    z-index: 2;
+    box-shadow: 0 0 20px black;
+}
+.bottom{
+    left: 0;
+    top: 75px;
+    border-bottom-left-radius: 75px;
+    line-height: 75px;
+}
+.bottom:hover{
+    z-index: 2;
+    box-shadow: 0px 0px 20px black;
+}
+.bottom img{
+    height: 20px;
+    background-color: antiquewhite;
+}
+.left{
+    left: 75px;
+    top: 75px;
+    border-bottom-right-radius: 75px;
+    line-height: 75px;
+}
+.left img{
+    height: 20px;
+}
+.left:hover{
+    z-index: 2;
+    box-shadow: 0px 0px 20px black;
+}
 
 /* end of contact me styling */
 

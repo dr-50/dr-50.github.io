@@ -77,3 +77,43 @@ function copyContact(element){
   var copyTextLen = copyText.length
   navigator.clipboard.writeText(copyText.substring(2,copyTextLen))
 }
+
+
+// contact me dial functions
+const dial = document.getElementById('dialContainer')
+
+// dial.addEventListener(
+//   "mouseenter",
+//   (element) => {
+//     console.log(element.target.querySelector('quarter'))
+//     // highlight the mouseenter target
+//     document.getElementById('dialValue').innerHTML = 'Changed'
+//   }
+// );
+
+function dialSelectorPhone(){
+    document.getElementById('dialValue').innerHTML = '920-493-8001'
+} 
+
+function dialSelectorEmail(){
+    document.getElementById('dialValue').innerHTML = 'DevonRoss50@yahoo.com'
+} 
+
+function dialSelectorGit(){
+    var dialValue = document.getElementById('dialValue')
+    dialValue.innerHTML='';
+    var a = document.createElement('a')
+    a.setAttribute('href', 'https://github.com/dr-50/')
+    a.innerHTML = 'https://github.com/dr-50/'
+    dialValue.appendChild(a);
+} 
+
+function dialSelectorLinkedIn(){
+    var dialValue = document.getElementById('dialValue')
+    dialValue.innerHTML='';
+    var a = document.createElement('a')
+    a.setAttribute('href', 'https://www.linkedin.com/in/devon-ross-2ab446202/')
+    a.innerHTML = 'https://www.linkedin.com/in/devon-ross-2ab446202/'
+    dialValue.appendChild(a);
+    // document.getElementById('dialValue').innerHTML = 'https://www.linkedin.com/in/devon-ross-2ab446202/'
+} 
