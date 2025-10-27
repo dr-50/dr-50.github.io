@@ -1,4 +1,18 @@
+//Current years of service calculation
+window.onload = function yearsService() {
+  
+  let startDate = new Date('10/20/2014')
+  let currentDate = new Date()
+  let yearsOfService = new Date(currentDate).getFullYear() - new Date(startDate).getFullYear()
+  
+  let el = document.getElementById('years-of-service')
 
+  if(currentDate.getMonth() < startDate.getMonth() || currentDate.getMonth() == startDate.getMonth() && currentDate.getDay() < startDate.getDay()){
+    yearsOfService--;
+  }
+  el.innerHTML = yearsOfService
+  console.log(`Years of Service: ${yearsOfService}`) 
+}
 // About Me (biography/bio) activate/inactivate past/current/future buttons
 function bioActivate(event) {
   
