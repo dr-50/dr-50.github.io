@@ -106,7 +106,7 @@ const dial = document.getElementById('dialContainer')
 // );
 
 function dialSelectorPhone(){
-    document.getElementById('dialValue').innerHTML = '920-493-8001'
+    document.getElementById('dialValue').innerHTML = ''
 } 
 
 function dialSelectorEmail(){
